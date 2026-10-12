@@ -1,0 +1,8 @@
+,Processor A (5Q Linear),Processor B (9Q Heavy-Hex)
+Circuit Depth,60,35
+Total CX Count,18,12
+SWAP Gate Count,2,0
+Routing CX Overhead,6,0
+Expected Cut,10.8625,11.0037
+Max-Cut Baseline,16.0,16.0
+Approximation Ratio,67.8909%,68.7729%

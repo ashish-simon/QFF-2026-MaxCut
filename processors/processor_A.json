@@ -1,0 +1,27 @@
+{
+  "processor_name": "Processor A",
+  "stage": "Phase 1 - Baseline Reference",
+  "physical_qubit_budget": 5,
+  "qubit_indices": [0, 1, 2, 3, 4],
+  "coupling_topology_type": "Linear Chain",
+  "coupling_map": [
+    [0, 1],
+    [1, 2],
+    [2, 3],
+    [3, 4]
+  ],
+  "basis_gate_set": ["rz", "sx", "x", "cx"],
+  "synthetic_noise_model": {
+    "1_qubit_depolarizing_error": 0.001,
+    "2_qubit_cx_depolarizing_error": 0.005,
+    "readout_error_probability": 0.01,
+    "target_single_qubit_gates": ["rz", "sx", "x"],
+    "target_two_qubit_gates": ["cx"]
+  },
+  "transpilation_baseline": {
+    "optimization_level": 1,
+    "seed_transpiler": 42,
+    "default_shots": 4096
+  },
+  "description": "5-qubit 1D linear chain nearest-neighbor coupling reference baseline for Phase 1 Max-Cut QAOA benchmarking."
+}

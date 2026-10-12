@@ -1,0 +1,35 @@
+{
+  "processor_name": "Processor B",
+  "stage": "Phase 1 - Contemporary Reference",
+  "physical_qubit_budget": 9,
+  "qubit_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "coupling_topology_type": "Sparse Heavy-Hex-Inspired",
+  "coupling_map": [
+    [0, 1],
+    [1, 2],
+    [1, 6],
+    [2, 3],
+    [2, 6],
+    [2, 5],
+    [3, 4],
+    [4, 5],
+    [5, 6],
+    [6, 7],
+    [6, 8],
+    [8, 0]
+  ],
+  "basis_gate_set": ["rz", "sx", "x", "cx"],
+  "synthetic_noise_model": {
+    "1_qubit_depolarizing_error": 0.001,
+    "2_qubit_cx_depolarizing_error": 0.005,
+    "readout_error_probability": 0.01,
+    "target_single_qubit_gates": ["rz", "sx", "x"],
+    "target_two_qubit_gates": ["cx"]
+  },
+  "transpilation_baseline": {
+    "optimization_level": 1,
+    "seed_transpiler": 42,
+    "default_shots": 4096
+  },
+  "description": "9-qubit sparse heavy-hex-inspired 12-edge coupling reference for Phase 1 contemporary hardware compilation."
+}

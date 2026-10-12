@@ -1,0 +1,62 @@
+{
+  "problem_statement": "PS-O1: Max-Cut on Weighted Graphs",
+  "generator": "nx.erdos_renyi_graph(n=6, p=0.5, seed=42)",
+  "num_nodes": 6,
+  "num_edges": 9,
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "edges": [
+    {
+      "u": 0,
+      "v": 2,
+      "weight": 1
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "weight": 1
+    },
+    {
+      "u": 0,
+      "v": 4,
+      "weight": 3
+    },
+    {
+      "u": 1,
+      "v": 4,
+      "weight": 2
+    },
+    {
+      "u": 1,
+      "v": 5,
+      "weight": 2
+    },
+    {
+      "u": 2,
+      "v": 3,
+      "weight": 2
+    },
+    {
+      "u": 2,
+      "v": 4,
+      "weight": 1
+    },
+    {
+      "u": 3,
+      "v": 4,
+      "weight": 5
+    },
+    {
+      "u": 3,
+      "v": 5,
+      "weight": 1
+    }
+  ],
+  "total_weight": 18
+}
